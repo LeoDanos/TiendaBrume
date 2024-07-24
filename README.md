@@ -1,8 +1,38 @@
-# React + Vite
+## <picture><source media="(prefers-color-scheme: dark)" srcset="https://brume.com.ar/wp-content/uploads/2024/02/brumeB_60.png"><source media="(prefers-color-scheme: light)" srcset="https://brume.com.ar/wp-content/uploads/2024/02/brumeN_60.png"><img alt="BRUMÉ"></picture>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este tienda está siendo desarrollada en **ReactJS** y **Bootstrap**.
 
-Currently, two official plugins are available:
+Es mi proyecto personal para el curso de [React](https://www.coderhouse.com/ar/online/reactjs) dentro del trayecto de [Desarrollo de Aplicaciones](https://www.coderhouse.com/online/desarrollo-de-aplicaciones) de la plataforma educativa ***CODERHOUSE***. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Como temática general de este trayecto decidí recrear parcialmente el sitio web que realicé originalmente con Wordpress para el emprendimiento de mi pareja: [brume.com.ar](https://brume.com.ar)
+Incluí un Simulador de Sistema de Turnos escrito en JavaScript: https://github.com/LeoDanos/Brume
+Y luego incluire la tienda desarrolada en React para el presente curso.
+
+## 🚀 Sobre Mi
+Mi nombre es Leonardo y me declaro Autodidacta.
+
+Mis primeros pasos en el mundo del Diseño Web fueron en la Secundaria, donde aprendí a usar el **Microsoft FrontPage**.
+
+Para cuando me egresé, el estándar de la industria era el **Macromedia Dreamweaver**, hice un curso introductorio y me lancé a hacer mis primeras webs Freelance, posteriormente incursioné en las animaciones en **Flash** realizando sitios íntegramente con dicho software.
+
+Luego de un tiempo trabajando en la gráfica impresa, retomé la creación de sitios web, esta vez usando el CMS más popular, **Wordpress**.
+
+Amo profundamente **Excel**, lo uso cotidianamente, ahí tuve mi primer contacto con el IF y su lógica, entre otras funciones... Hice cursos básicos de **Python** en _EducacionIt_, y **JavaScript** en _ArgentinaPrograma_. Experimenté un poco con **Arduino (C++)** y con la impresión 3D (_Artillery Genius Pro_).
+
+Soy un apasionado de los Videojuegos.
+
+Hice varios _Mods_ para el simulador **ARMA3** sobre la _Guerra de Malvinas_ : Uniformes, Edificios e incluso Terrenos, están disponibles gratuitamente en mi [Steam Workshop](https://steamcommunity.com/id/loro_cdm/myworkshopfiles/?appid=107410)
+
+Mis primeros modelos 3D fueron con **AutoCAD**; bueno para diseñar muebles, no tanto para assets de juegos [[Sketchfab](https://sketchfab.com/leodanos)]. Para los terrenos aprendí a usar softwares de GIS (mapas de altura, formatos georeferenciados, etc. una locura) y para la ropa **Marvelous Designer** que es un standard de la industria de VG [[Artstation](https://artstation.com/leodanos)], pero siempre requerian retoques en un soft de modelado, por esos motivos me inscribí en el curso de **Blender** de Coderhouse. Me gustó tanto la dinámica de la cursada que ni bien lo terminé me anoté en el de Desarrollo de Videojuegos con **Unity (C#)** [[Itch.io](https://leodanos.itch.io/luxoo)], no era el Engine que me interesaba aun así aprendí muchísimo!
+
+Actualmente estoy experimentando el Landscaping en **Unreal Engine**, me anoté en el curso de [Escenarios 3D para Videojuegos y Animación](https://davinci.edu.ar/cursos/adultos/arte-3d-escenarios-para-videojuegos-y-animacion) en Escuela Da Vinci, y seguramente siga con **ZBrush**...
+
+Aun no me termino de decidir a donde apuntar mi carrera profesional, se que debo enfocarme en algo y ser bueno en eso, entiendo el código, me gusta la programación, pero el diseño de videojuegos me apasiona!
+
+Mientras tanto siempre trato de mejorar y seguir capacitándome.
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonardodanos/)
+[![sketchfab](https://img.shields.io/badge/sketchfab-%231CAAD9.svg?&style=for-the-badge&logo=sketchfab&logoColor=white)](https://sketchfab.com/leodanos)
+[![artstation](https://img.shields.io/badge/artstation-%2313AFF0.svg?&style=for-the-badge&logo=artstation&logoColor=white)](https://artstation.com/leodanos)
+[![itch.io](https://img.shields.io/badge/itch.io-%23FA5C5C.svg?&style=for-the-badge&logo=itch.io&logoColor=white)](https://leodanos.itch.io/luxoo)
+[![steam](https://img.shields.io/badge/steam-%23000000.svg?&style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/id/loro_cdm/myworkshopfiles/?appid=107410)
