@@ -12,7 +12,7 @@ export const ItemListContainer = () => {
     const {id} = useParams();
 
 useEffect(() => {
-    new Promise((resolve, reject) => setTimeout(resolve(data), 2000))
+    new Promise((resolve, reject) => setTimeout(() => resolve(data), 2000))
     .then((response) => {
         if (!id) {
             setItems(response);

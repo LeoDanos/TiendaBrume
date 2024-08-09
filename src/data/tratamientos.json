@@ -2,7 +2,7 @@
 {
     "id": 1,
     "title": "Limpieza Facial",
-    "category": "Cosmetología",
+    "category": "Cosmetologia",
     "description": "...",
     "pictureUrl": "../assets/",
     "price": "10000"
@@ -10,9 +10,17 @@
 {
     "id": 2,
     "title": "Limpieza Facial",
-    "category": "Manicuría",
+    "category": "Manicuria",
     "description": "...",
     "pictureUrl": "../assets/",
     "price": "5000"
+},
+{
+    "id": 3,
+    "title": "Dermaplaning",
+    "category": "Cosmetologia",
+    "description": "...",
+    "pictureUrl": "../assets/",
+    "price": "15000"
 }
 ]
