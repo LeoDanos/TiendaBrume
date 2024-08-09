@@ -1,0 +1,18 @@
+[
+{
+    "id": 1,
+    "title": "Limpieza Facial",
+    "category": "Cosmetología",
+    "description": "...",
+    "pictureUrl": "../assets/",
+    "price": "10000"
+}, 
+{
+    "id": 2,
+    "title": "Limpieza Facial",
+    "category": "Manicuría",
+    "description": "...",
+    "pictureUrl": "../assets/",
+    "price": "5000"
+}
+]
