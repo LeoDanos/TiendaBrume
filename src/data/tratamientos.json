@@ -1,26 +1,114 @@
 [
-{
-    "id": 1,
-    "title": "Limpieza Facial",
-    "category": "Cosmetologia",
-    "description": "...",
-    "pictureUrl": "../assets/",
-    "price": "10000"
-}, 
-{
-    "id": 2,
-    "title": "Limpieza Facial",
-    "category": "Manicuria",
-    "description": "...",
-    "pictureUrl": "../assets/",
-    "price": "5000"
-},
-{
-    "id": 3,
-    "title": "Dermaplaning",
-    "category": "Cosmetologia",
-    "description": "...",
-    "pictureUrl": "../assets/",
-    "price": "15000"
-}
+ {
+        "id": 1,
+        "title": "Limpieza Facial Profunda",
+        "category": "Cosmetologia",
+        "description": "Es un tratamiento personalizado destinado a eliminar todo tipo de impurezas de la piel e hidratarla en profundidad. Es necesario realizar una limpieza profunda una vez por mes, como también previo a cualquier otro tratamiento facial para lograr una mayor absorción de los productos y optimizar los resultados.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "price": "16600"
+    },
+    {
+        "id": 2,
+        "title": "Limpieza de Espalda",
+        "category": "Cosmetologia",
+        "description": "Ideal para renovar la piel de la espalda, eliminar todo tipo de impurezas y dejarla mucho mas suave e hidratada.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza_espalda_expand.jpg",
+        "price": "18300"
+    },
+    {
+        "id": 3,
+        "title": "Dermaplaning",
+        "category": "Cosmetologia",
+        "description": "Es un método de exfoliación física y superficial mediante la utilización de un bisturí con el cual se logra eliminar células muertas y vello facial (sin alterar su crecimiento), mejora el aspecto y textura de la piel, reduce los poros, manchas y arrugas finas.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/dermaplaning_expand.jpg",
+        "price": "17800"
+    },
+    {
+        "id": 4,
+        "title": "Peeling",
+        "category": "Cosmetologia",
+        "description": "Es un tratamiento de exfoliación profunda, que ayuda a eliminar células muertas de la superficie de la piel, estimula la renovación celular  mejorando su textura dejándola suave y luminosa. Aumenta la producción de colágeno natural de nuestra piel, mejora secuelas de acné y unifica el tono de la piel aclarando manchas. Al finalizar la sesión se brinda asesoramiento para el cuidado y mantenimiento en domicilio",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/peeling_expand.jpg",
+        "price": "17800"
+    },
+    {
+        "id": 5,
+        "title": "Mesoterapia Virtual",
+        "category": "Cosmetologia",
+        "description": "La mesoterapia virtual con electroporador es una vía de penetración de principios activos a lo profundo el tejido cutáneo ideal para trabajar en tratamientos antiage. Favorece la reparación celular ayudando a mejorar la calidad de la piel.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/mesoterapia_expand.jpg",
+        "price": "17300"
+    },
+    {
+        "id": 6,
+        "title": "Hifu Mini + RF",
+        "category": "Cosmetologia",
+        "description": "Tecnología especializada para el rejuvenecimiento facial con efecto lifting y lipolisis emitiendo energía de ultrasonido focalizado de alta intensidad ideal para levantar y reafirmar la piel de manera natural sin cirugía.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/hifu.jpg",
+        "price": "18800"
+    },
+    {
+        "id": 7,
+        "title": "Microneedling con Dermapen",
+        "category": "Cosmetologia",
+        "description": "Es un procedimiento que estimula la capacidad de regeneración cutánea a través de micropunciones realizadas con un dispositivo llamado DERMAPEN el cual induce a la formación de colágeno y elastina.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/dermapen.jpg",
+        "price": "21800"
+    },
+    {
+        "id": 8,
+        "title": "Hydra Lips",
+        "category": "Cosmetologia",
+        "description": "Ideal para tratar labios resecos y agrietados y con arrugas peribucal. Esta técnica se realiza con microagujas y DERMAPEN, con la aplicación de Ácido Hialurónico como principio activo (no relleno)",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/hydralips_expand.jpg",
+        "price": "15600"
+    },
+    {
+        "id": 9,
+        "title": "Lifting de Pestañas",
+        "category": "Cosmetologia",
+        "description": "El tratamiento ideal para elevar y acentuar la curvatura de las pestañas naturales modificando la estructura del pelo haciéndolas parecer visiblemente más largas.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/lifting_pestanas_expand.jpg",
+        "price": "14800"
+    },
+    {
+        "id": 10,
+        "title": "Laminado de Cejas",
+        "category": "Cosmetologia",
+        "description": "Tratamiento semipermanente para lograr el efecto de cejas peinadas, fijando el pelo hacía arriba o hacia la dirección que queramos.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/laminado_cejas.jpg",
+        "price": "13900"
+    },
+    {
+        "id": 11,
+        "title": "Esmaltado Semipermanente",
+        "category": "Manicuria",
+        "description": "...",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "price": "8000"
+    },
+    {
+        "id": 12,
+        "title": "Kapping Gel",
+        "category": "Manicuria",
+        "description": "...",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "price": "7000"
+    },
+    {
+        "id": 13,
+        "title": "Kapping Acrilico",
+        "category": "Manicuria",
+        "description": "...",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "price": "6000"
+    },
+    {
+        "id": 14,
+        "title": "Esculpidas en Acrilico",
+        "category": "Manicuria",
+        "description": "...",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "price": "8000"
+    }
 ]

@@ -7,3 +7,120 @@ span {
   padding: 0 6px;
   font-size:10pt;
 }
+
+/* TRATAMIENTOS */
+html {
+  overflow-x: hidden;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.box img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.box div {
+  z-index: 3;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: grid;
+  place-items: end start;
+}
+
+.box div h5 {
+  margin-left: 15px;
+  text-shadow: black 1px 0 8px;
+}
+
+.box div h5 a {
+  color: white;
+  text-decoration: none;
+}
+
+.b1 {
+  grid-area: a1;
+}
+
+.b2 {
+  grid-area: a2;
+}
+
+.b3 {
+  grid-area: a3;
+}
+
+.b4 {
+  grid-area: a4;
+}
+
+.b5 {
+  grid-area: a5;
+}
+
+.b6 {
+  grid-area: a6;
+}
+
+.b7 {
+  grid-area: a7;
+}
+
+.b8 {
+  grid-area: a8;
+}
+
+.b9 {
+  grid-area: a9;
+}
+
+.b10 {
+  grid-area: a10;
+}
+
+.b11 {
+  grid-area: a11;
+}
+
+.b12 {
+  grid-area: a12;
+}
+
+.b13 {
+  grid-area: a13;
+}
+
+.b14 {
+  grid-area: a14;
+}
+
+.grid {
+  padding: 40px 10%;
+  display: grid;
+  gap: 15px;
+  place-items: end center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 260px);
+  grid-template-areas: "a11 a12 a13 a14" "a1 a1 a2 a3" "a4 a5 a8 a8" "a6 a7 a9 a10";
+}
+
+.box div {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.box div:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
