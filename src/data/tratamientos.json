@@ -4,7 +4,7 @@
         "title": "Limpieza Facial Profunda",
         "category": "Cosmetologia",
         "description": "Es un tratamiento personalizado destinado a eliminar todo tipo de impurezas de la piel e hidratarla en profundidad. Es necesario realizar una limpieza profunda una vez por mes, como también previo a cualquier otro tratamiento facial para lograr una mayor absorción de los productos y optimizar los resultados.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "pictureUrl": "../src/assets/tratamientos/limpieza-facial_expand.jpg",
         "price": "16600"
     },
     {
@@ -12,7 +12,7 @@
         "title": "Limpieza de Espalda",
         "category": "Cosmetologia",
         "description": "Ideal para renovar la piel de la espalda, eliminar todo tipo de impurezas y dejarla mucho mas suave e hidratada.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza_espalda_expand.jpg",
+        "pictureUrl": "../src/assets/tratamientos/limpieza_espalda_expand.jpg",
         "price": "18300"
     },
     {
@@ -20,7 +20,7 @@
         "title": "Dermaplaning",
         "category": "Cosmetologia",
         "description": "Es un método de exfoliación física y superficial mediante la utilización de un bisturí con el cual se logra eliminar células muertas y vello facial (sin alterar su crecimiento), mejora el aspecto y textura de la piel, reduce los poros, manchas y arrugas finas.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/dermaplaning_expand.jpg",
+        "pictureUrl": "../src/assets/tratamientos/dermaplaning_expand.jpg",
         "price": "17800"
     },
     {
@@ -28,7 +28,7 @@
         "title": "Peeling",
         "category": "Cosmetologia",
         "description": "Es un tratamiento de exfoliación profunda, que ayuda a eliminar células muertas de la superficie de la piel, estimula la renovación celular  mejorando su textura dejándola suave y luminosa. Aumenta la producción de colágeno natural de nuestra piel, mejora secuelas de acné y unifica el tono de la piel aclarando manchas. Al finalizar la sesión se brinda asesoramiento para el cuidado y mantenimiento en domicilio",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/peeling_expand.jpg",
+        "pictureUrl": "../src/assets/tratamientos/peeling_expand.jpg",
         "price": "17800"
     },
     {
@@ -36,7 +36,7 @@
         "title": "Mesoterapia Virtual",
         "category": "Cosmetologia",
         "description": "La mesoterapia virtual con electroporador es una vía de penetración de principios activos a lo profundo el tejido cutáneo ideal para trabajar en tratamientos antiage. Favorece la reparación celular ayudando a mejorar la calidad de la piel.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/mesoterapia_expand.jpg",
+        "pictureUrl": "../src/assets/tratamientos/mesoterapia_expand.jpg",
         "price": "17300"
     },
     {
@@ -44,7 +44,7 @@
         "title": "Hifu Mini + RF",
         "category": "Cosmetologia",
         "description": "Tecnología especializada para el rejuvenecimiento facial con efecto lifting y lipolisis emitiendo energía de ultrasonido focalizado de alta intensidad ideal para levantar y reafirmar la piel de manera natural sin cirugía.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/hifu.jpg",
+        "pictureUrl": "../src/assets/tratamientos/hifu.jpg",
         "price": "18800"
     },
     {
@@ -52,7 +52,7 @@
         "title": "Microneedling con Dermapen",
         "category": "Cosmetologia",
         "description": "Es un procedimiento que estimula la capacidad de regeneración cutánea a través de micropunciones realizadas con un dispositivo llamado DERMAPEN el cual induce a la formación de colágeno y elastina.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/dermapen.jpg",
+        "pictureUrl": "../src/assets/tratamientos/dermapen.jpg",
         "price": "21800"
     },
     {
@@ -60,7 +60,7 @@
         "title": "Hydra Lips",
         "category": "Cosmetologia",
         "description": "Ideal para tratar labios resecos y agrietados y con arrugas peribucal. Esta técnica se realiza con microagujas y DERMAPEN, con la aplicación de Ácido Hialurónico como principio activo (no relleno)",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/hydralips_expand.jpg",
+        "pictureUrl": "../src/assets/tratamientos/hydralips_expand.jpg",
         "price": "15600"
     },
     {
@@ -68,7 +68,7 @@
         "title": "Lifting de Pestañas",
         "category": "Cosmetologia",
         "description": "El tratamiento ideal para elevar y acentuar la curvatura de las pestañas naturales modificando la estructura del pelo haciéndolas parecer visiblemente más largas.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/lifting_pestanas_expand.jpg",
+        "pictureUrl": "../src/assets/tratamientos/lifting_pestanas_expand.jpg",
         "price": "14800"
     },
     {
@@ -76,7 +76,7 @@
         "title": "Laminado de Cejas",
         "category": "Cosmetologia",
         "description": "Tratamiento semipermanente para lograr el efecto de cejas peinadas, fijando el pelo hacía arriba o hacia la dirección que queramos.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/laminado_cejas.jpg",
+        "pictureUrl": "../src/assets/tratamientos/laminado_cejas.jpg",
         "price": "13900"
     },
     {
@@ -84,7 +84,7 @@
         "title": "Esmaltado Semipermanente",
         "category": "Manicuria",
         "description": "Es un esmaltado de secado inmediato y de larga duración que mantiene un resultado reluciente. Este efecto se consigue con la aplicación de esmaltes específicos y el secado de las uñas en una luz UV o LED",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/esmaltado_semipermanente.jpg",
+        "pictureUrl": "../src/assets/tratamientos/esmaltado_semipermanente.jpg",
         "price": "8000"
     },
     {
@@ -92,7 +92,7 @@
         "title": "Kapping Gel",
         "category": "Manicuria",
         "description": "Consiste en aplicar una fina capa de acrílico o gel fortificador sobre la uña que actúa como una barrera protectora. A diferencia de las uñas esculpidas, este baño en gel kapping no alarga la uña natural sino que acompaña el crecimiento de la misma y dura hasta unos 20 días.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/kapping_gel.jpg",
+        "pictureUrl": "../src/assets/tratamientos/kapping_gel.jpg",
         "price": "7000"
     },
     {
@@ -100,7 +100,7 @@
         "title": "Kapping Acrilico",
         "category": "Manicuria",
         "description": "Conocido como Baño en Acrilico o Kapping, esta tecnica nos ayudara a darle una capa de dureza a nuestra uña natural, tambien podemos extender el largo de la uñas natural sin necesidad de un molde para esculpir. ",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/kapping_acrilico.jpg",
+        "pictureUrl": "../src/assets/tratamientos/kapping_acrilico.jpg",
         "price": "6000"
     },
     {
@@ -108,7 +108,7 @@
         "title": "Esculpidas en Acrilico",
         "category": "Manicuria",
         "description": "Este tipo de uñas postizas se hacen en acrílico con una combinación de líquido especial o monómero y polímero en polvo, que se endurece rápidamente al dejar secar con aire.",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/esculpidas_acrilico.jpg",
+        "pictureUrl": "../src/assets/tratamientos/esculpidas_acrilico.jpg",
         "price": "8000"
     }
 ]
