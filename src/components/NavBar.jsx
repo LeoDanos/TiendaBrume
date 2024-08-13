@@ -9,7 +9,7 @@ import logo from '../assets/brumeB-140x36.png'
 
 export const NavBar = () => {
     return (
-<Navbar bg="dark" data-bs-theme="dark">
+<Navbar style={{ backgroundColor: '#444' }} data-bs-theme="dark" >
         <Container>
           <Navbar.Brand as={NavLink} to="/"><img src={logo} height={32}/></Navbar.Brand>
           <Nav className="me-auto">

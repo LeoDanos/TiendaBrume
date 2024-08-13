@@ -26,8 +26,8 @@ export const ItemDetailContainer = () => {
         <Container className="mt-4">
         <h1>{item.title}</h1>
         <Link to={`/category/${item.category}`}>{item.category}</Link>
-        <h3>{item.description}</h3>
-        <img src={item.pictureUrl} alt={item.title} /> <br />
+        <br /><br /><h3>{item.description}</h3><br />
+        <img src={item.pictureUrl} alt={item.title} height={600} width={600} style={{ objectFit: 'cover' }}/> <br /><br />
         <b>${item.price}</b>
         </Container>
         );

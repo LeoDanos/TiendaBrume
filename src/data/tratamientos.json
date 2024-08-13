@@ -83,32 +83,32 @@
         "id": 11,
         "title": "Esmaltado Semipermanente",
         "category": "Manicuria",
-        "description": "...",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "description": "Es un esmaltado de secado inmediato y de larga duración que mantiene un resultado reluciente. Este efecto se consigue con la aplicación de esmaltes específicos y el secado de las uñas en una luz UV o LED",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/esmaltado_semipermanente.jpg",
         "price": "8000"
     },
     {
         "id": 12,
         "title": "Kapping Gel",
         "category": "Manicuria",
-        "description": "...",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "description": "Consiste en aplicar una fina capa de acrílico o gel fortificador sobre la uña que actúa como una barrera protectora. A diferencia de las uñas esculpidas, este baño en gel kapping no alarga la uña natural sino que acompaña el crecimiento de la misma y dura hasta unos 20 días.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/kapping_gel.jpg",
         "price": "7000"
     },
     {
         "id": 13,
         "title": "Kapping Acrilico",
         "category": "Manicuria",
-        "description": "...",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "description": "Conocido como Baño en Acrilico o Kapping, esta tecnica nos ayudara a darle una capa de dureza a nuestra uña natural, tambien podemos extender el largo de la uñas natural sin necesidad de un molde para esculpir. ",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/kapping_acrilico.jpg",
         "price": "6000"
     },
     {
         "id": 14,
         "title": "Esculpidas en Acrilico",
         "category": "Manicuria",
-        "description": "...",
-        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/limpieza-facial_expand.jpg",
+        "description": "Este tipo de uñas postizas se hacen en acrílico con una combinación de líquido especial o monómero y polímero en polvo, que se endurece rápidamente al dejar secar con aire.",
+        "pictureUrl": "https://brume.vercel.app/assets/images/tratamientos/esculpidas_acrilico.jpg",
         "price": "8000"
     }
 ]

@@ -1,69 +1,51 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-/*
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-*/
+import { useParams, useLocation } from 'react-router-dom';
 import data from '../data/tratamientos.json';
-import { LoadingGif } from './LoadingGif'
+import { LoadingGif } from './LoadingGif';
 
 export const ItemListContainer = () => {
-    const [items, setItems] = useState ([]);
+    const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const {id} = useParams();
+    const { id } = useParams();
+    const location = useLocation();
 
-useEffect(() => {
-    new Promise((resolve, reject) => setTimeout(() => resolve(data), 2000))
-    .then((response) => {
-        if (!id) {
-            setItems(response);
-        }else {
-            const filtered = response.filter (i => i.category === id);
-            setItems(filtered);
+    const getClassName = () => {
+        if (location.pathname.includes('/category/Cosmetologia')) {
+            return 'cosmetologia-class';
+        } else if (location.pathname.includes('/category/Manicuria')) {
+            return 'manicuria-class';
         }
-        })
-    .finally(() => setLoading(false));
-}, [id]);
+        return 'tienda-class';
+    };
 
-if(loading) return (<LoadingGif />);
-    return <section className="grid">{items.map((i) => (
+    useEffect(() => {
+        setLoading(true);
+        new Promise((resolve) => setTimeout(() => resolve(data), 2000))
+            .then((response) => {
+                if (!id) {
+                    setItems(response);
+                } else {
+                    const filtered = response.filter(i => i.category === id);
+                    setItems(filtered);
+                }
+            })
+            .finally(() => setLoading(false));
+    }, [id]);
 
-// className={`b{i.id}`}
-/*
-    <Card key={i.id} style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={i.pictureUrl} alt={i.title}/>
-      <Card.Body>
-        <Card.Title>{i.title}</Card.Title>
-        <Card.Text>
-        {i.description}
-        </Card.Text>
-        <Card.Text>
-        {i.price}
-        </Card.Text>
-        <Link to={`/item/${i.id}`}><Button variant="primary">Ver</Button></Link>
-      </Card.Body>
-    </Card>
+    if (loading) return <LoadingGif />; 
 
-  */
-
-        
-    
-    
-  <article key={i.id} className={`box b${i.id}`}>
-    <div><h5><a href={`/item/${i.id}`}>{i.title}</a></h5></div>
-    <img src={i.pictureUrl} alt={i.title} />
-    
-  </article>
-
-
-/* <p>{i.description}</p>
-      <p>{i.price}</p>
-      */
-    
-    ))}</section>
-}
+    return (
+        <section className={getClassName() + ' grid'}>
+            {items.map((i) => (
+                <article key={i.id} className={`box b${i.id}`}>
+                    <div><h5><a href={`/item/${i.id}`}>{i.title}</a></h5></div>
+                    <img src={i.pictureUrl} alt={i.title} />
+                </article>
+            ))}
+        </section>
+    );
+};
 
 
 
