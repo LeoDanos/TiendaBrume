@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { Link, useParams, useLocation } from 'react-router-dom';
 import data from '../data/tratamientos.json';
 import { LoadingGif } from './LoadingGif';
 
@@ -39,7 +39,7 @@ export const ItemListContainer = () => {
         <section className={getClassName() + ' grid'}>
             {items.map((i) => (
                 <article key={i.id} className={`box b${i.id}`}>
-                    <div><h5><a href={`/item/${i.id}`}>{i.title}</a></h5></div>
+                    <div><h5><Link to={`/item/${i.id}`}>{i.title}</Link></h5></div>
                     <img src={i.pictureUrl} alt={i.title} />
                 </article>
             ))}
