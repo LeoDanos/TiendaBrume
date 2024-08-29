@@ -5,17 +5,17 @@ Esta aplicación es un simulador de E-commerce desarrollado en **ReactJS** usand
 Cuenta con un listado de servicios de ejemplo y se puede filtrar en categorías de Cosmetología y Manicuría.
 Tiene una página de detalles para cada servicio, con precio y gestión de inventario, vinculados a una base de datos en Firebase.
 
-Para probar esta aplicación ejecute los siguientes comandos:
+Para probar esta aplicación ejecute los siguientes comandos.
 
-Clonar el Repositorio:
+1. Clonar el Repositorio:
 
 ```git clone https://github.com/LeoDanos/TiendaBrume```
 
-Instalar las Dependencias:
+2. Instalar las Dependencias:
 
 ```npm install```
 
-Correr la Aplicación:
+3. Correr la Aplicación:
 
 ```npm run dev```
 
