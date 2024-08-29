@@ -7,13 +7,16 @@ Tiene una página de detalles para cada servicio, con precio y gestión de inven
 
 Para probar esta aplicación ejecute los siguientes comandos:
 
-Clonar el Repositorio:1
+Clonar el Repositorio:
+
 ```git clone https://github.com/LeoDanos/TiendaBrume```
 
 Instalar las Dependencias:
+
 ```npm install```
 
 Correr la Aplicación:
+
 ```npm run dev```
 
 Es mi proyecto personal para el curso de [React](https://www.coderhouse.com/ar/online/reactjs) dentro del trayecto de [Desarrollo Frontend React](https://www.coderhouse.com/ar/online/carrera-online-desarrollo-frontend) de la plataforma educativa ***CODERHOUSE***. 
