@@ -7,7 +7,7 @@ Tiene una página de detalles para cada servicio, con precio y gestión de inven
 
 Para probar esta aplicación ejecute los siguientes comandos:
 
-Clonar el Repositorio:
+Clonar el Repositorio:1
 ```git clone https://github.com/LeoDanos/TiendaBrume```
 
 Instalar las Dependencias:
