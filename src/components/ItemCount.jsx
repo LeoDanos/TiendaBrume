@@ -25,7 +25,7 @@ export const ItemCount = ({ onAdd, stock }) => {
 
     return (
         <>
-            <Button variant="secondary" onClick={handleDecrese}><b>-</b></Button>
+            <Button variant="secondary" onClick={handleDecrese}><b>−</b></Button>
             <span>  <b>{count}</b>  </span>
             <Button variant="secondary" onClick={handleIncrese}><b>+</b></Button>&nbsp;
             <Button variant="dark" onClick={() => handleAdd(onAdd)}><b>Reservar</b></Button>

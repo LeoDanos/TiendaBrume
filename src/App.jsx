@@ -5,6 +5,8 @@ import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import { Provider } from './contexts/CartContext';
 import { Cart } from './components/Cart';
+import { Checkout } from './components/Checkout';
+import { NotFound } from './components/NotFound';
 
 function App() {
     return (
@@ -17,7 +19,8 @@ function App() {
                         <Route path="/category/:id" element={<ItemListContainer />} />
                         <Route path="/item/:id" element={<ItemDetailContainer />} />
                         <Route path="/cart" element={<Cart />} />
-                        <Route path="*" element={404} />
+                        <Route path="/checkout" element={<Checkout />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </main>
                 <Footer />
@@ -27,6 +30,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import { getFirestore, getDocs, where, query, collection } from 'firebase/firestore';
 import { LoadingGif } from './LoadingGif';
 import { ItemList } from './ItemList';
+import { NotFound } from './NotFound';
 
 export const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
     const { id } = useParams();
     const location = useLocation();
+    const navigate = useNavigate();
 
     const getClassName = () => {
         if (location.pathname.includes('/category/Cosmetologia')) {
@@ -29,14 +32,20 @@ export const ItemListContainer = () => {
 
         getDocs(ref)
             .then((snapshot) => {
-                setItems(snapshot.docs.map((doc) => {
-                    return { id: doc.id, ...doc.data() };
-                }));
+                if (snapshot.empty) {
+                    setError(true);
+                    navigate('/notfound');
+                } else {
+                    setItems(snapshot.docs.map((doc) => {
+                        return { id: doc.id, ...doc.data() };
+                    }));
+                }
             })
             .finally(() => setLoading(false));
-    }, [id]);
+    }, [id, navigate]);
 
     if (loading) return <LoadingGif />;
+    if (error) return <NotFound />;
 
     return (
         <section className={getClassName() + ' grid'}>

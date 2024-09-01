@@ -1,16 +1,19 @@
 import { useEffect, useState, useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import Container from 'react-bootstrap/Container';
 import { CartContext } from '../contexts/CartContext';
 import { LoadingGif } from './LoadingGif';
 import { ItemDetail } from './ItemDetail';
+import { NotFound } from './NotFound';
 
 export const ItemDetailContainer = () => {
-    const [item, setItem] = useState([]);
+    const [item, setItem] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
     const { addItem } = useContext(CartContext);
     const { id } = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const db = getFirestore();
@@ -18,16 +21,22 @@ export const ItemDetailContainer = () => {
 
         getDoc(refDoc)
             .then((snapshot) => {
-                setItem({ ...snapshot.data(), id: snapshot.id });
+                if (!snapshot.exists()) {
+                    setError(true);
+                    navigate('/notfound');
+                } else {
+                    setItem({ ...snapshot.data(), id: snapshot.id });
+                }
             })
             .finally(() => setLoading(false));
-    }, [id]);
+    }, [id, navigate]);
 
     const onAdd = (quantity) => {
         addItem({ ...item, quantity });
     };
 
-    if (loading) return (<LoadingGif />);
+    if (loading) return <LoadingGif />;
+    if (error) return <NotFound />;
 
     return (
         <Container>

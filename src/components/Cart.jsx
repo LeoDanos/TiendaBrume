@@ -3,30 +3,30 @@ import { CartContext } from "../contexts/CartContext";
 import Container from 'react-bootstrap/Container';
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import { LoadingGif } from './LoadingGif';
 
 const initialValues = {
     phone: "",
     email: "",
     name: "",
-}
+};
 
 export const Cart = () => {
-
     const [buyer, setBuyer] = useState(initialValues);
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const { items, removeItem, reset, updateQuantity } = useContext(CartContext);
+    const navigate = useNavigate();
 
     const handleChange = (ev) => {
-        setBuyer((prev) => {
-            return {
-                ...prev,
-                [ev.target.name]: ev.target.value,
-            };
-        });
+        setBuyer((prev) => ({
+            ...prev,
+            [ev.target.name]: ev.target.value,
+        }));
     };
 
     const validate = () => {
@@ -54,7 +54,9 @@ export const Cart = () => {
             items,
             total,
         };
-    
+        
+        setLoading(true);
+
         const db = getFirestore();
         const orderCollection = collection(db, "ordenes");
 
@@ -65,19 +67,24 @@ export const Cart = () => {
                         icon: 'success',
                         title: 'Orden Completada',
                         text: `Su orden: ${id} ha sido completada con éxito!`,
+                    }).then(() => {
+                        navigate('/checkout', { state: { order: { id, items, total } } });
                     });
                 }
             })
             .finally(() => {
+                setLoading(false);
                 reset();
                 setBuyer(initialValues);
                 setErrors({});
             });
     };
 
+    if (loading) return <LoadingGif />;
+
     return (
         <Container className="mt-5">
-            {items.length > 0 && (
+            {items.length > 0 ? (
                 <>
                     <Button className="mb-5" variant="danger" onClick={reset}>Vaciar Carrito</Button>
                     
@@ -99,11 +106,11 @@ export const Cart = () => {
                                 <div className="mb-2">
                                     <h5>{item.title}</h5>
                                     <Link to={`/item/${item.id}`}>
-                                        <img src={item.imageId} height={124} width={124} style={{ objectFit: 'cover' }} alt={item.title} />
+                                        <img src={item.imageId} height={128} width={128} style={{ objectFit: 'cover' }} alt={item.title} />
                                     </Link>
                                 </div>
                                 <div>
-                                    <Button variant="secondary" onClick={handleDecrese}><b>-</b></Button>
+                                    <Button variant="secondary" onClick={handleDecrese}><b>−</b></Button>
                                     <b> {item.quantity} </b>
                                     <Button variant="secondary" onClick={handleIncrese}><b>+</b></Button>&nbsp;
                                     <Button variant="danger" onClick={() => removeItem(item.id)}>X</Button>
@@ -153,9 +160,7 @@ export const Cart = () => {
                     </Form>
                     <br /><br />
                 </>
-            )}
-
-            {items.length === 0 && (
+            ) : (
                 <p>El carrito está vacío<br /><br />Volver al <Link to="/">Inicio</Link></p>
             )}
         </Container>
