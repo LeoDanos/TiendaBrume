@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link, useParams, useLocation } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import { getFirestore, getDocs, where, query, collection } from 'firebase/firestore';
 import { LoadingGif } from './LoadingGif';
+import { ItemList } from './ItemList';
 
 export const ItemListContainer = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
-
     const { id } = useParams();
     const location = useLocation();
 
@@ -20,40 +20,27 @@ export const ItemListContainer = () => {
     };
 
     useEffect(() => {
-       const db = getFirestore();
+        setLoading(true);
 
-       const ref = !id
-        ? collection (db, "productos")
-        : query (collection (db, "productos"), where ("categoryId", "==", id));
+        const db = getFirestore();
+        const ref = !id
+            ? collection(db, "productos")
+            : query(collection(db, "productos"), where("categoryId", "==", id));
 
-        getDocs (ref)
-            .then((Snapshot) => {
-                setItems (
-                    Snapshot.docs.map((doc) => {
-                        return { id: doc.id, ...doc.data()};
-                    })
-                );
+        getDocs(ref)
+            .then((snapshot) => {
+                setItems(snapshot.docs.map((doc) => {
+                    return { id: doc.id, ...doc.data() };
+                }));
             })
-
             .finally(() => setLoading(false));
     }, [id]);
 
-    if (loading) return <LoadingGif />; 
+    if (loading) return <LoadingGif />;
 
     return (
         <section className={getClassName() + ' grid'}>
-            {items.map((i) => (
-                <article key={i.id} className={`box b${i.classId}`}>
-                    <div><h5><Link to={`/item/${i.id}`}>{i.title}</Link></h5></div>
-                    <img src={i.imageId} alt={i.title} />
-                </article>
-            ))}
+            <ItemList items={items} />
         </section>
     );
 };
-
-
-
-
-
-    

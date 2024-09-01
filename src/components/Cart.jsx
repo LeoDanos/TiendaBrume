@@ -151,6 +151,7 @@ export const Cart = () => {
                         </Form.Group>
                         <Button variant="dark" onClick={handleSubmit}>Confirmar Turnos</Button>
                     </Form>
+                    <br /><br />
                 </>
             )}
 
