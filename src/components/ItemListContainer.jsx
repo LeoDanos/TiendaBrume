@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams, useLocation } from 'react-router-dom';
-import data from '../data/tratamientos.json';
+import { getFirestore, getDocs, where, query, collection } from 'firebase/firestore';
 import { LoadingGif } from './LoadingGif';
 
 export const ItemListContainer = () => {
@@ -20,16 +20,21 @@ export const ItemListContainer = () => {
     };
 
     useEffect(() => {
-        setLoading(true);
-        new Promise((resolve) => setTimeout(() => resolve(data), 2000))
-            .then((response) => {
-                if (!id) {
-                    setItems(response);
-                } else {
-                    const filtered = response.filter(i => i.category === id);
-                    setItems(filtered);
-                }
+       const db = getFirestore();
+
+       const ref = !id
+        ? collection (db, "productos")
+        : query (collection (db, "productos"), where ("categoryId", "==", id));
+
+        getDocs (ref)
+            .then((Snapshot) => {
+                setItems (
+                    Snapshot.docs.map((doc) => {
+                        return { id: doc.id, ...doc.data()};
+                    })
+                );
             })
+
             .finally(() => setLoading(false));
     }, [id]);
 
@@ -38,9 +43,9 @@ export const ItemListContainer = () => {
     return (
         <section className={getClassName() + ' grid'}>
             {items.map((i) => (
-                <article key={i.id} className={`box b${i.id}`}>
+                <article key={i.id} className={`box b${i.classId}`}>
                     <div><h5><Link to={`/item/${i.id}`}>{i.title}</Link></h5></div>
-                    <img src={i.pictureUrl} alt={i.title} />
+                    <img src={i.imageId} alt={i.title} />
                 </article>
             ))}
         </section>

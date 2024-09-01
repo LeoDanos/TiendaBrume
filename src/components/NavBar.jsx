@@ -13,7 +13,7 @@ export const NavBar = () => {
         <Container>
           <Navbar.Brand as={NavLink} to="/"><img src={logo} height={32}/></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/">Inicio</Nav.Link>
+            <Nav.Link as={NavLink} to="/">Servicios</Nav.Link>
             <Nav.Link as={NavLink} to="/category/Cosmetologia">Cosmetología</Nav.Link>
             <Nav.Link as={NavLink} to="/category/Manicuria">Manicuría</Nav.Link>
           </Nav>

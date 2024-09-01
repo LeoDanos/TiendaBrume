@@ -3,7 +3,7 @@
 Esta aplicación es un simulador de E-commerce desarrollado en **ReactJS** usando **Bootstrap**.
 
 Cuenta con un listado de servicios de ejemplo y se puede filtrar en categorías de Cosmetología y Manicuría.
-Tiene una página de detalles para cada servicio, con precio y gestión de inventario, vinculados a una base de datos en Firebase.
+Tiene una página de detalles para cada servicio, con precio y gestión de inventario, vinculados a una base de datos en Firebase mediante Firestore.
 
 Para probar esta aplicación ejecute los siguientes comandos.
 

@@ -1,11 +1,26 @@
-span {
+.cartItems {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: 24px;
+    margin-left: -20px;
+    width: 19px;
+    height: 19px; 
+    font-size: 10pt;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+.cartImg {
+  padding-right: 10px;
+}
+  
+span a {
   color:white;
-  background-color: red;
-  border-radius: 100%;
-  margin-top: 24px;
-  margin-left: -10px;
-  padding: 0 6px;
-  font-size:10pt;
+  text-decoration: none;
 }
 
 /* TRATAMIENTOS */
@@ -143,4 +158,31 @@ html {
   background-color: rgba(0, 0, 0, 0);
 }
 
+/* ITEMS */
+
+.itemDetail {
+  display: flex;
+  gap: 50px;
+}
+
+.btn {
+  height: 30px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;  
+}
+
+/* FORM REACT */
+
+.form-control {
+  width: 180px;  
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #333436;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(34, 38, 41, 0.25);
+}
 
